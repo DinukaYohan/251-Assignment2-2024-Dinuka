@@ -1,78 +1,80 @@
 package assign251_2;
 
-import org.apache.logging.log4j.core.Layout;
-import org.apache.logging.log4j.core.LogEvent;
-import org.apache.logging.log4j.core.config.plugins.Plugin;
-import org.apache.logging.log4j.core.config.plugins.PluginFactory;
-import org.apache.logging.log4j.core.config.plugins.PluginElement;
-import org.apache.logging.log4j.core.config.plugins.PluginAttribute;
+import org.apache.logging.log4j.core.*;
+import org.apache.logging.log4j.core.config.plugins.*;
 import org.apache.logging.log4j.core.layout.AbstractLayout;
-import org.apache.logging.log4j.util.Strings;
 import org.apache.velocity.VelocityContext;
 import org.apache.velocity.app.Velocity;
 
 import java.io.StringWriter;
 import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
 
-@Plugin(name = "VelocityLayout", category = "Core", elementType = Layout.ELEMENT_TYPE)
+@Plugin(name = "VelocityLayout", category = "Core", elementType = Layout.ELEMENT_TYPE, printObject = true)
 public class VelocityLayout extends AbstractLayout<String> {
 
-    private final String template;
-    private final Charset charset;  // Manually store the charset
+    private String pattern;
+    private final Charset charset;
 
-    protected VelocityLayout(Charset charset, String template) {
-        super(null, null);  // Passing null for header and footer
-        this.template = template;
-        this.charset = charset;  // Initialize the charset
+    protected VelocityLayout(Charset charset, String pattern) {
+        super(null, null);
+
+        if (pattern == null || pattern.isEmpty()) {
+            throw new IllegalArgumentException("Pattern cannot be null or empty.");
+        }
+
+        this.pattern = pattern;
+        this.charset = charset;
     }
 
     @PluginFactory
     public static VelocityLayout createLayout(
             @PluginAttribute(value = "charset", defaultString = "UTF-8") Charset charset,
-            @PluginElement("Template") String template) {
-        return new VelocityLayout(charset, template);
+            @PluginAttribute("pattern") String pattern) {
+        return new VelocityLayout(charset, pattern);
+    }
+
+    public void setPattern(String pattern) {
+        if (pattern == null || pattern.isEmpty()) {
+            throw new IllegalArgumentException("Pattern cannot be null or empty.");
+        }
+        this.pattern = pattern;
     }
 
     @Override
     public String toSerializable(LogEvent event) {
-        // Initialize Velocity if not already done
+        if (event == null) {
+            throw new NullPointerException("LogEvent cannot be null");
+        }
+
         Velocity.init();
 
         // Create a VelocityContext and populate it with log event data
         VelocityContext context = new VelocityContext();
-        context.put("message", event.getMessage().getFormattedMessage());
-        context.put("timestamp", event.getTimeMillis());
-        context.put("level", event.getLevel().toString());
-        context.put("loggerName", event.getLoggerName());
+        context.put("c", event.getLoggerName());  // Category
+        context.put("d", new java.util.Date(event.getTimeMillis()).toString());  // Date
 
-        // Generate the output based on the provided template
+        String message = (event.getMessage() != null) ? event.getMessage().getFormattedMessage() : "null";
+        context.put("m", message);  // Message
+
+        context.put("p", event.getLevel().toString());  // Priority
+        context.put("t", event.getThreadName());  // Thread
+        context.put("n", System.lineSeparator());  // Line separator
+
+        // Generate the output based on the provided pattern
         StringWriter writer = new StringWriter();
-        Velocity.evaluate(context, writer, "log", template);
+        Velocity.evaluate(context, writer, "log", pattern);
 
         return writer.toString();
     }
 
-    // Convert the log event to a byte array using the manually stored charset
     @Override
     public byte[] toByteArray(LogEvent event) {
         String serialized = toSerializable(event);
-        return serialized.getBytes(charset);  // Use the manually stored charset
+        return serialized.getBytes(charset);
     }
 
-    // Implement getContentType to return the MIME type of the layout
     @Override
     public String getContentType() {
-        return "text/plain";  // You can change this to "text/html" if using HTML templates
-    }
-
-    @Override
-    public byte[] getHeader() {
-        return Strings.EMPTY.getBytes(StandardCharsets.UTF_8);
-    }
-
-    @Override
-    public byte[] getFooter() {
-        return Strings.EMPTY.getBytes(StandardCharsets.UTF_8);
+        return "text/plain";
     }
 }
