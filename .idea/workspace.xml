@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4aea5df8-0208-469b-b513-ac9f3c785ae9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/assign251_2/StressTestAppender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assign251_2/MemAppender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign251_2/MemAppender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/assign251_2/VelocityLayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/assign251_2/VelocityLayout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/assign251_2/MemAppenderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/assign251_2/MemAppenderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/assign251_2/VelocityLayoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/assign251_2/VelocityLayoutTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,23 +35,78 @@
   "keyToString": {
     "JUnit.AppenderStressTest.executor": "Run",
     "JUnit.MemAppenderTest.executor": "Run",
+    "JUnit.StressTestAppender.executor": "Run",
     "JUnit.VelocityLayoutTest.executor": "Run",
     "Maven.assign251_2 [clean].executor": "Run",
     "Maven.assign251_2 [test].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "stress-test",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "VisualVMLauncher"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="assign251_2" />
     </key>
+  </component>
+  <component name="RunManager" selected="JUnit.StressTestAppender">
+    <configuration name="MemAppenderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="assign251_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign251_2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assign251_2" />
+      <option name="MAIN_CLASS_NAME" value="assign251_2.MemAppenderTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StressTestAppender" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="assign251_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign251_2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assign251_2" />
+      <option name="MAIN_CLASS_NAME" value="assign251_2.StressTestAppender" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VelocityLayoutTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="assign251_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assign251_2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assign251_2" />
+      <option name="MAIN_CLASS_NAME" value="assign251_2.VelocityLayoutTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.StressTestAppender" />
+        <item itemvalue="JUnit.VelocityLayoutTest" />
+        <item itemvalue="JUnit.MemAppenderTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
