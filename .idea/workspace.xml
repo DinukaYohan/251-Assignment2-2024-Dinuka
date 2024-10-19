@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4aea5df8-0208-469b-b513-ac9f3c785ae9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/stress-test.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/stress-test.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +35,7 @@
   "keyToString": {
     "JUnit.AppenderStressTest.executor": "Run",
     "JUnit.MemAppenderTest.executor": "Run",
-    "JUnit.StressTestAppender.executor": "Run",
+    "JUnit.StressTestAppender.executor": "Run with VisualVM",
     "JUnit.VelocityLayoutTest.executor": "Run",
     "Maven.assign251_2 [clean].executor": "Run",
     "Maven.assign251_2 [test].executor": "Run",
@@ -43,6 +43,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/dinukayohan/Desktop/251-Assignment2-2024-Dinuka",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
