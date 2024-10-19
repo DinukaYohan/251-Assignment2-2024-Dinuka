@@ -5,7 +5,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4aea5df8-0208-469b-b513-ac9f3c785ae9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/logs/stress-test.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/stress-test.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/org/apache/logging/log4j/core/config/plugins/Log4j2Plugins.dat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/assign251_2/MemAppender.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/assign251_2/VelocityLayout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/jacoco-report/assign251_2/MemAppender.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/jacoco-report/assign251_2/MemAppender.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/jacoco-report/assign251_2/VelocityLayout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/jacoco-report/assign251_2/VelocityLayout.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/jacoco-report/assign251_2/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/jacoco-report/assign251_2/index.source.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/jacoco-report/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/jacoco-report/jacoco-resources/branchfc.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/jacoco-report/jacoco-resources/branchnc.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/jacoco-report/jacoco-resources/branchpc.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/jacoco-report/jacoco-resources/bundle.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/jacoco-report/jacoco-resources/class.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/jacoco-report/jacoco-resources/down.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/jacoco-report/jacoco-resources/greenbar.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/jacoco-report/jacoco-resources/group.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/jacoco-report/jacoco-resources/method.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/jacoco-report/jacoco-resources/package.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/jacoco-report/jacoco-resources/prettify.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/jacoco-report/jacoco-resources/prettify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/jacoco-report/jacoco-resources/redbar.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/jacoco-report/jacoco-resources/report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/jacoco-report/jacoco-resources/report.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/jacoco-report/jacoco-resources/session.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/jacoco-report/jacoco-resources/sort.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/jacoco-report/jacoco-resources/sort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/jacoco-report/jacoco-resources/source.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/jacoco-report/jacoco-resources/up.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/jacoco-report/jacoco-sessions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/jacoco-report/jacoco.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/jacoco-report/jacoco.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/jacoco.exec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-assign251_2.MemAppenderTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-assign251_2.VelocityLayoutTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/assign251_2.MemAppenderTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/assign251_2.VelocityLayoutTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/assign251_2/MemAppenderTest$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/assign251_2/MemAppenderTest$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/assign251_2/MemAppenderTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/assign251_2/StressTestAppender.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/assign251_2/VelocityLayoutTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +89,7 @@
     "Maven.assign251_2 [test].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "add-target",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/dinukayohan/Desktop/251-Assignment2-2024-Dinuka",
     "project.structure.last.edited": "Modules",
